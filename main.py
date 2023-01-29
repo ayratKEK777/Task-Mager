@@ -98,7 +98,7 @@ class ToDoList(QWidget):
         self.conn.commit()
         list_active_tasks = [x[0] for x in list_active_tasks]
         for task in list_active_tasks:
-            self.active_tasks_QListWidget.addItem(i)
+            self.active_tasks_QListWidget.addItem(task)
 
     def update_list_with_completed_tasks(self):
         self.completed_tasks_QListWidget.clear()
